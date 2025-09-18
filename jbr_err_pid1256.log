@@ -1,0 +1,35 @@
+Exception in NSApplicationAWT:
+ OutOfMemoryError
+0   CoreFoundation                      0x000000019f9670e4 __exceptionPreprocess + 176
+1   libobjc.A.dylib                     0x000000019f485fd0 objc_exception_throw + 60
+2   CoreFoundation                      0x000000019f966f88 +[NSException exceptionWithName:reason:userInfo:] + 0
+3   libawt_lwawt.dylib                  0x000000011ebe5354 -[CommonComponentAccessibility initWithParent:withEnv:withAccessible:withIndex:withView:withJavaRole:] + 692
+4   libawt_lwawt.dylib                  0x000000011ebe732c +[CommonComponentAccessibility createWithParent:withClass:accessible:role:index:withEnv:withView:] + 752
+5   libawt_lwawt.dylib                  0x000000011ebe7024 +[CommonComponentAccessibility createWithParent:accessible:role:index:withEnv:withView:] + 116
+6   libawt_lwawt.dylib                  0x000000011ebe6abc +[CommonComponentAccessibility childrenOfParent:withEnv:withChildrenCode:allowIgnored:recursive:] + 2512
+7   libawt_lwawt.dylib                  0x000000011ebe7ea8 -[CommonComponentAccessibility accessibleChildrenWithChildCode:] + 280
+8   libawt_lwawt.dylib                  0x000000011ebe5960 -[CommonComponentAccessibility postTreeNodeExpanded] + 100
+9   Foundation                          0x00000001a0882c14 __NSThreadPerformPerform + 264
+10  CoreFoundation                      0x000000019f8ee5ac __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28
+11  CoreFoundation                      0x000000019f8ee540 __CFRunLoopDoSource0 + 176
+12  CoreFoundation                      0x000000019f8ee310 __CFRunLoopDoSources0 + 340
+13  CoreFoundation                      0x000000019f8eceb8 __CFRunLoopRun + 828
+14  CoreFoundation                      0x000000019f8ec428 CFRunLoopRunSpecific + 612
+15  HIToolbox                           0x00000001a913edf0 RunCurrentEventLoopInMode + 292
+16  HIToolbox                           0x00000001a913ea80 ReceiveNextEventCommon + 220
+17  HIToolbox                           0x00000001a913e984 _BlockUntilNextEventMatchingListInModeWithFilter + 76
+18  AppKit                              0x00000001a2b1397c _DPSNextEvent + 636
+19  AppKit                              0x00000001a2b12b18 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 716
+20  libosxapp.dylib                     0x0000000112383990 -[NSApplicationAWT nextEventMatchingMask:untilDate:inMode:dequeue:] + 144
+21  AppKit                              0x00000001a2b06f7c -[NSApplication run] + 464
+22  libosxapp.dylib                     0x0000000112383748 +[NSApplicationAWT runAWTLoopWithApp:] + 208
+23  libawt_lwawt.dylib                  0x000000011ec0c1c8 +[AWTStarter starter:headless:] + 488
+24  libosxapp.dylib                     0x0000000112385630 +[ThreadUtilities invokeBlockCopy:] + 28
+25  Foundation                          0x00000001a0882c14 __NSThreadPerformPerform + 264
+26  CoreFoundation                      0x000000019f8ee5ac __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28
+27  CoreFoundation                      0x000000019f8ee540 __CFRunLoopDoSource0 + 176
+28  CoreFoundation                      0x000000019f8ee2b0 __CFRunLoopDoSources0 + 244
+29  CoreFoundation                      0x000000019f8eceb8 __CFRunLoopRun + 828
+30  CoreFoundation                      0x000000019f8ec428 CFRunLoopRunSpecific + 612
+31  idea                                0x000000010467c8ac main + 3324
+32  dyld                                0x000000019f4b7f28 start + 2236
